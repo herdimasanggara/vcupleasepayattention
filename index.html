@@ -562,9 +562,6 @@
         const j = Math.floor(Math.random() * (i + 1));
         [DEAL[i], DEAL[j]] = [DEAL[j], DEAL[i]];
       }
-      /* Carter always opens: their sentence is the first one */
-      const FIRST = STUDENTS.findIndex((s) => s.name === "Carter");
-      if (FIRST >= 0) DEAL.unshift(...DEAL.splice(DEAL.indexOf(FIRST), 1));
 
       const INFO = [
         { text: "December 4-6" },
